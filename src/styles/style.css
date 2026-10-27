@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 24px;
+  color: #252525;
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 24px;
+}
+
+h2 {
+  margin: 24px 0 10px;
+  font-size: 1.2rem;
+}
+
+.navbar,
+.product-card,
+.order-tracker,
+.weather-card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.navbar-actions,
+.product-prices,
+.order-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  padding: 7px 12px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.product-card h3,
+.order-tracker h3,
+.weather-card h3 {
+  margin: 0 0 10px;
+}
+
+.stock-status,
+.clothing-advice,
+.weather-condition,
+.wind-speed,
+.order-message,
+.order-eta,
+.free-shipping,
+.alert-banner,
+.umbrella-advice {
+  margin: 8px 0;
+}
+
+.is-low,
+.temp-cold,
+.temp-hot,
+.alert-banner {
+  color: #a64b20;
+}
+
+.is-sold-out {
+  color: #a22;
+}
+
+.original-price {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.sale-label {
+  color: #a22;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.free-shipping,
+.temp-mild,
+.step.done {
+  color: #286342;
+}
+
+.progress-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.step {
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #eee;
+  font-size: 0.9rem;
+}
+
+.step.done {
+  background: #e5f1e8;
+}
+
+.order-eta {
+  padding: 10px;
+  border-radius: 4px;
+  background: #f3f5e9;
+}
+
+.star-button {
+  padding: 2px;
+  border: 0;
+  background: none;
+  color: #b27819;
+  font-size: 1.2rem;
+}
+
+.reorder-button {
+  color: #fff;
+  border-color: #a22;
+  background: #a22;
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 16px;
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .navbar-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
